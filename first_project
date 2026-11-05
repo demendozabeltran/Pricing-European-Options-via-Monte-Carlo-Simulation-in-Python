@@ -1,0 +1,26 @@
+import math as m
+import random
+
+def greaterThanZero(val):
+    if val > 0.0:
+        return val
+
+def randomNumberGenerator():
+
+    x = 0
+    y=0
+
+    sq = 0
+
+    while sq>=1.0:
+        x = (2.0 * random.randfloat(0.0, 1))-1
+        y = (2.0 * random.randfloat(0.0, 1))-1
+        
+        sq = x*x + y*y
+
+    return x*m.sqrt(-2*m.log(sq)/sq)
+
+def monte_carlo_call_price(price0, strike, time, rate, volatility, sims):
+    payouts = 0.0
+    for i in range(sims):
+        
