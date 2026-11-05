@@ -28,3 +28,5 @@ A helper function is necessary to make sure that the value is greater than 0.
 If the value is greater than 0 it will return the value. If it is less it will return 0. 
 By returning 0 we are also demonstrating the contract holders right to not purchase or sell any of the underlying 
 assets within the option.
+
+All variables at the end can be changed accordingly and are arbitrarily chosen for testing and demonstration.
